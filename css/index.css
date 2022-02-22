@@ -1,0 +1,121 @@
+
+#apresentacao {
+    
+    background-color: var(--black);
+    background-image: url('../images/bg-pizza.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-box > h1, #apresentacao a {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-box > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(4rem, 5vw, 6.4rem);
+}
+
+#apresentacao a, #cardapio a {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 1.3rem 7rem;
+    border-radius: 4.8rem;
+    background: var(--red);
+    margin: 3rem 0;
+    color: #ffffff;
+}
+
+#apresentacao a:hover, #cardapio a:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+}    
+
+/* **********************CARDÁPIO ***************************** */
+#cardapio {
+    padding-top: 1rem;
+    background-color: var(--black);
+    color: #ffffff;
+}
+
+#cardapio h1 {
+    justify-self: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#cardapio > div:not(#box-cardapio) {
+    width: 100%;
+    padding-top: 3.5rem;
+    text-align: center;
+}
+
+.tamanho {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 0 4rem;
+    box-sizing: border-box;
+}
+
+.price-size {
+    padding: 4rem 0;
+    box-sizing: content-box;
+    
+    width: 100%;
+    max-width: 38rem;
+    border-radius: 5rem;
+    text-align: center;
+    
+    background-image: url('../images/madeira-cardapioo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.price-size p {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    margin: 1.5rem;
+}
+
+/* ********************* FOOTER ******************************** */
+footer {
+    background-image: linear-gradient(to bottom, black 0.1%, white, white);
+}
+
+/* ********************* MEDIA SCREEN ********************** */
+@media screen and (max-width:1030px) {
+
+    .price-size {
+        max-width: 40rem;
+    }
+}  
+    
+/* ********************* MEDIA SCREEN ********************** */
+@media screen and (max-width:850px) {
+
+    #apresentacao a {
+        padding: 1.3rem 5rem;
+    }
+    
+    #cardapio {
+        padding: 0;
+    }
+
+    /* CARDÁPIO */
+
+    #box-cardapio {
+        border-radius: 0;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .tamanho {
+        padding: 0;
+    }
+
+}

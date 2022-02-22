@@ -1,0 +1,121 @@
+
+.box-frame > section {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 7rem 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        'titulo formPedido'
+        'ilustracao formPedido';
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.7rem, 1vw, 2.4rem);
+}
+
+#titulo {
+    grid-area: titulo;
+    align-self: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+#ilustracao {
+    grid-area: ilustracao;
+    
+    overflow: hidden;
+    object-fit: cover;
+    display: grid;
+    border-radius: 15px;
+    place-items: center;
+}
+
+#ilustracao img {
+    width: 63.8rem;
+    height: 100%;
+}
+
+#formPedido {
+    grid-area: formPedido;
+    display: inline-block;
+}
+
+/********************************/
+
+#formPedido input[type=checkbox] {
+    display: inline;
+}
+
+#formPedido input[type=checkbox]:checked {
+    display: inline;
+}
+
+#formPedido ul {
+    height: 40rem;
+    /* height: calc(100% - 80px); */
+    list-style-type: none;
+    overflow: hidden scroll;
+}
+
+#formPedido p {
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+#formPedido > div, #formPedido li {
+    height: 7rem;
+    margin: .8rem;
+    padding: 1.3rem 2rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.59rem, 5vw, 2rem);
+    color: var(--gold);
+    background-color: #000;
+}
+
+#formPedido > div {
+    padding: 1.3rem 1.8rem;
+    height: auto;
+    /* line-height: 3.5rem; */
+}
+
+#formPedido > div input[type=radio] {
+    margin-right: 1.5rem;
+}
+
+#saboresList label {
+    width: 100%;
+    height: 100%;
+}
+
+#ingredientes {
+    color: #ffffff;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 805px) {
+
+    .popup {
+        width: 100%;
+        padding: 2rem .5rem;
+    }
+    
+    .box-frame > section {
+    grid-template-rows: 7rem 1fr 1fr;
+    grid-template-columns: 100%;
+        grid-template-areas: 
+        'titulo'
+        'formPedido';
+    }
+
+    #formPedido ul {
+        height: 33rem;
+    }
+        
+    #ilustracao img {
+        display: none;
+    }
+}

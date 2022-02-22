@@ -1,0 +1,118 @@
+
+body {
+   background-image: url('../images/bg-pedidopopup.png');
+}
+
+header {
+    justify-content: center;
+}
+
+header ul {
+    display: none;
+}
+
+/* section {
+    width: 100%;
+    height: 100%;
+} */
+ 
+#fundo {
+   position: absolute;
+   top: 0;
+   left: 0;
+ 
+   transition: opacity .2s;
+   opacity: 0;
+   z-index: -1;
+   pointer-events: none;
+   display: flex;
+   justify-content: center;
+
+   width: 100vw;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+ 
+#fundo.show {
+   pointer-events: visible;
+   opacity: 1;
+   z-index: 1;
+}
+ 
+.popup {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   
+   width: 85%;
+   max-width: 100rem;
+   max-height: 60rem;
+   padding: 3.5rem;
+   border-radius: 30px;
+   background-color: rgb(255, 255, 255);
+}
+
+.popup button {
+   position: absolute;
+   bottom: 20px;
+}
+
+.popup h2 {
+   display: inline;
+}
+
+.popup p {
+   font-size: 18px;
+}
+
+#botoes {
+   height: 100%;
+   display: grid;
+   grid-template-columns: 25% 25%;
+   grid-template-rows: 9.8vh 1fr 1fr;
+   justify-content: center;
+   justify-items: center;
+
+   grid-column-gap: 5rem;
+   grid-row-gap: 1.5rem;
+   
+   min-height: calc(100vh - 17rem);
+   font-family: 'Poppins', sans-serif;
+}
+
+#botoes > h1 {
+   grid-column: 1/3;
+   align-self: center;
+   font-size: clamp(4rem, 4.5vw, 5rem);
+}
+
+#botoes button {
+   height: 96%;
+   padding: 1.5rem 2rem;
+   border-radius: 4rem;
+   color: #000;
+   font-family: 'Salsa', cursive;
+   font-weight: 700;
+   font-size: clamp(2rem, 3vw, 3rem);
+   background-color: #CCC5A1;
+   border: 2px solid #000;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+#botoes button img {
+   width: 100%;
+}
+
+.box-frame {
+   /* overflow: hidden; */
+   width: 100%;
+   height: calc(100% - 35px);   /* pro botao ficar certo*/
+}
+
+.box-frame > iframe {
+   width: 100%;
+   height: 100%;
+}
+
+

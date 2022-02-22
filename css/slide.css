@@ -1,0 +1,106 @@
+
+
+.slide-box {
+    margin-top: 3rem;
+    width: 62.2vw;
+    height: 35vw;
+    min-width: 30rem;
+    min-height: 16.9rem;
+    max-width: 120rem;
+    max-height: 675px;
+    border-radius: 4vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-title {
+    text-align: center;
+}
+
+.title1 {
+    display: none;
+}
+
+.title2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 107%;
+}
+
+.slide-title h1 {
+    color: #ffffff;
+}
+
+.navigation {
+    display: flex;    
+    justify-content: center;
+    position: relative;
+    top: -2.5em;
+}
+
+.bar {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #fff;
+    margin: 6px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;    /* são 5 slides por isso 500% */
+    height: 100%;
+}
+
+.slide {
+    width: 20%;     /* 100 / 5 é igual a 20 */
+    transition: .6s;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .title1 {
+        display: block;
+    }
+
+    .title2 {
+        display: none;
+    }
+}

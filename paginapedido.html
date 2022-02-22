@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pagpedido.css">
+    <link rel="stylesheet" href="css/popup.css">
+    
+    <title>Pedir - Hangouts</title>
+</head>
+<body>
+    <!---->
+    <div class="content">
+        <header>
+            <a href="index.html">
+                <img src="images/Logo_Pizzaria.png" alt="logo Hangouts">
+            </a>
+            
+            
+            <input type="checkbox" name="" id="checkmenu">
+            <label for="checkmenu">
+                <!-- <img src="images/menu-button.png" alt=""> -->
+            </label>
+            <ul>
+                <li class="last">
+                    <a href="cardapio.html">
+                        Pedir
+                    </a>
+                </li>
+                <li>
+                    <a href="cardapio.html">
+                        Cardárpio                
+                    </a>
+                </li>
+                <li>
+                        <a href="login.html" id="nomeMenu">
+                            Entrar
+                            <!--entrar-->
+                            <!--nomeMenu-->
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+        <section>
+            <!-- <h1 id="tituloEscolha"><letter>P</letter>eça sua <letter>P</letter>izza</h1> -->
+            
+            <div id="botoes">
+                    <h1><letter>P</letter>eça sua <letter>P</letter>izza</h1>
+                <button class="open tradicionais">
+                    <!-- <img src="images/bt-imagem/tradicional.png" alt=""> -->
+                    <p>Tradicionais</p>
+                </button>
+                <button class="open especiais">
+                    <!-- <img src="images/bt-imagem/especial.png" alt=""> -->
+                    <p>Especiais</p>
+                </button>
+                <button class="open doces">
+                    <!-- <img src="images/bt-imagem/doce.png" alt=""> -->
+                    <p>Doces</p>
+                </button>
+                <button class="open calzones">
+                    <!-- <img src="images/bt-imagem/calzone.png" alt=""> -->
+                    <p>Calzones</p>
+                </button>
+            </div>
+            
+            <div id="fundo">
+                <div class="popup">
+                    <div class="box-frame">
+                        <section> 
+                            <h1 id="titulo">Tipo da pizza!</h1>
+                    
+                            <div id="ilustracao">  
+                                <img src="#" alt="imagem ilustrativa" id="imgIlustrativa">
+                            </div>
+                            <form action="" method="post" id="formPedido">
+                                <div>
+                                    <label for="brotinho">Brotinho</label>
+                                    <input type="radio" name="tamanho" class="tamanho" id="brotinho">
+                                    <label for="grande">Grande</label>
+                                    <input type="radio" name="tamanho" class="tamanho" id="grande">
+                                    <label for="big">Big</label>
+                                    <input type="radio" name="tamanho" class="tamanho" id="big">
+                                </div>
+                            
+                                <p>Escolha <span id="numSabores">NUM</span> sabores:</p>
+                            
+                                <ul id="saboresList">
+                                    <li>
+                                        <label for="cc">Calabresa</label>
+                                        <input type="checkbox" id="cc">
+                                        <div id="ingredientes">srgadsrgheqrhg</div>
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                    </li>
+                                    <li>
+                                        <label for="">Calabresa</label>
+                                        <input type="checkbox">
+                                        <div id="ingredientes">srgadsrgheqrhg</div>
+                                    </li>
+                                </ul>
+                            </form>
+                    
+                        </section>
+                    </div>
+                    <div>
+                        <button id="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div><!--content-->
+    
+    <script src="js/sabores.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
