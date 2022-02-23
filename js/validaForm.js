@@ -24,8 +24,8 @@ function verificaSenha() {
         isValid = false;
     }
     
-    if(senha.value.match(/[a-zA-Z0-9]+/g)) {
-        criaErro(senha, 'Digite apeba');
+    if(senha.value.match(/[^a-zA-Z 0-9]+/g)) {
+        criaErro(senha, 'Digite apenas números');
         isValid = false;
     }
 
